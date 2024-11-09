@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Profissional</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         /* Estilo da seção de patrocinadores */
+    .sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .sponsor {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sponsor img {
+        width: 150px; /* Tamanho das imagens */
+        height: 80px;
+        object-fit: contain; /* Garante que a imagem não fique distorcida */
+    }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f7f8fa;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 80px; /* Para não sobrepor o conteúdo ao header fixo */
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: padding 0.3s ease, background-color 0.3s ease;
+        }
+
+        header.small {
+            padding: 10px;
+            background-color: #002244; /* Cor mais escura ao rolar */
+            height: px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #f4d35e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+        position: relative;
+        width: 100%;
+        height: 70vh; /* Altura da imagem de fundo */
+        background-image: url('https://amanha.com.br/images/u/171/Campus-da-PUCPR-em-Curitiba.jpg');
+        background-size: cover; /* Faz a imagem cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        display: flex;
+        align-items: center; /* Alinha o conteúdo verticalmente */
+        justify-content: center; /* Alinha o conteúdo horizontalmente */
+    }
+
+    .hero h1 {
+        color: #e0cece; /* Cor do texto */
+        font-size: 9rem; /* Tamanho da fonte */
+        text-align: center; /* Alinhamento do texto */
+        padding: 15px 30px; /* Espaçamento interno do texto */
+        display: inline-block; /* Faz o texto ocupar o espaço necessário */
+        border-radius: 10px; /* Borda arredondada */
+        text-shadow: 
+            2px 2px 0 rgba(0, 0, 0, 0.7), /* Sombra superior esquerda */
+            -2px -2px 0 rgba(0, 0, 0, 0.7), /* Sombra inferior direita */
+            2px -2px 0 rgba(0, 0, 0, 0.7), /* Sombra inferior esquerda */
+            -2px 2px 0 rgba(0, 0, 0, 0.7); /* Sombra superior direita */
+    }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 70%;
+            margin: auto;
+        }
+
+        .content-section img {
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section p {
+            flex: 1;
+            font-size: 1.4rem;
+        }
+
+        .foto{
+            padding: 4px;
+            background-color: black;
+        }
+
+        .foto:hover{
+            transform: scale(1.1);
+            transition: transform .5s;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .social-links a {
+            color: #f4d35e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Células</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="https://www.youtube.com">Entre para a liga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Liga Financeira<br>PUCPR</h1> 
+    </section>
+
+    <!-- Content Section com Foto e Texto -->
+    <div class="content-section">
+        <img src="https://picsum.photos/600/400?random=3" alt="Foto"class="foto">
+        <p>Aqui é o exemplo de como ficaria um texto aqui. A ideia é falar de algo como: Tal evento foi muito importante e pudemos fazer isto, isso e aquilo e assim por diante.</p>
+    </div>
+
+    <div class="content-section">
+        <p>Ou poderia deixar aqui quais são as células da liga e o que cada uma faz. E, quando clicar na foto da liga, você será redire
+            cionado para ser redirecionado para uma página da liga.</p>
+        <img src="https://picsum.photos/600/400?random=4" alt="Foto" class="foto">
+    </div>
+
+    <div class="content-section">
+        <img src="https://picsum.photos/600/400?random=5" alt="Foto" class="foto">
+        <p>Mais e mais texto para ter maior visualização de como seria o site. Mais e mais texto para ter maior visualização de como seria o site. Mais e mais texto para ter maior visualização de como seria o site. Mais e mais texto para ter maior visualização de como seria o site.</p>
+    </div>
+
+    <div class="sponsors">
+        <div class="sponsor">
+            <img src="https://picsum.photos/600/400?random=10" alt="Patrocinador 1">
+        </div>
+        <div class="sponsor">
+            <img src="https://picsum.photos/600/400?random=11" alt="Patrocinador 2">
+        </div>
+        <div class="sponsor">
+            <img src="https://picsum.photos/600/400?random=12" alt="Patrocinador 3">
+        </div>
+        <div class="sponsor">
+            <img src="https://picsum.photos/600/400?random=13" alt="Patrocinador 4">
+        </div>
+        <div class="sponsor">
+            <img src="https://picsum.photos/600/400?random=14" alt="Patrocinador 5">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 6">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 7">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 8">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 9">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 10">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 11">
+        </div>
+        <div class="sponsor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 12">
+        </div>
+    </div>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script para Reduzir o Header -->
+    <script>
+        window.onscroll = function () {
+            var header = document.getElementById("header");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.classList.add("small");
+            } else {
+                header.classList.remove("small");
+            }
+        };
+    </script>
+</body>
+
+</html>
