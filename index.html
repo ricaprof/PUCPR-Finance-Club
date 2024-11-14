@@ -39,88 +39,95 @@
             color: #333;
             line-height: 1.6;
             padding-top: 80px; /* Para não sobrepor o conteúdo ao header fixo */
-        }
-
-        header {
-            background-color: #003366;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            top: 0;
             width: 100%;
-            z-index: 1000;
-            transition: padding 0.3s ease, background-color 0.3s ease;
         }
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-        header.small {
-            padding: 10px;
-            background-color: #002244; /* Cor mais escura ao rolar */
-            height: px;
-        }
+/* Logo */
+.logo img {
+    width: 50px; /* Tamanho do logo */
+    height: auto;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+/* Navegação */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
 
-        nav ul li a {
-            color: #f4d35e;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav ul li a {
+    color: #dbc4c4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+nav ul li a:hover {
+    color: #690e08; /* Cor ao passar o mouse */
+}
 
-        .hero {
-        position: relative;
-        width: 100%;
-        height: 70vh; /* Altura da imagem de fundo */
-        background-image: url('https://amanha.com.br/images/u/171/Campus-da-PUCPR-em-Curitiba.jpg');
-        background-size: cover; /* Faz a imagem cobrir toda a área */
-        background-position: center; /* Centraliza a imagem */
-        display: flex;
-        align-items: center; /* Alinha o conteúdo verticalmente */
-        justify-content: center; /* Alinha o conteúdo horizontalmente */
-    }
+/* Ícones de Redes Sociais */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
 
-    .hero h1 {
-        color: #e0cece; /* Cor do texto */
-        font-size: 9rem; /* Tamanho da fonte */
-        text-align: center; /* Alinhamento do texto */
-        padding: 15px 30px; /* Espaçamento interno do texto */
-        display: inline-block; /* Faz o texto ocupar o espaço necessário */
-        border-radius: 10px; /* Borda arredondada */
-        text-shadow: 
-            2px 2px 0 rgba(0, 0, 0, 0.7), /* Sombra superior esquerda */
-            -2px -2px 0 rgba(0, 0, 0, 0.7), /* Sombra inferior direita */
-            2px -2px 0 rgba(0, 0, 0, 0.7), /* Sombra inferior esquerda */
-            -2px 2px 0 rgba(0, 0, 0, 0.7); /* Sombra superior direita */
-    }
+.social-icons a img {
+    width: 24px; /* Tamanho dos ícones */
+    height: auto;
+}
 
-        .content-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 40px 20px;
-            max-width: 70%;
-            margin: auto;
-        }
+/* Hero Section */
+.hero {
+    background-image: url('Campus-da-PUCPR-em-Curitiba-1.jpg'); /* Substitua pela URL da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: -8%;
+}
 
-        .content-section img {
-            width: 50%;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
+.hero-content {
+    position: relative;
+    z-index: 2; /* Coloca o texto acima da sobreposição escura */
+}
 
-        .content-section p {
-            flex: 1;
-            font-size: 1.4rem;
-        }
+.hero-content h1 {
+    font-size: 3rem;
+    color: #d6c7c7;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.img-hero{
+    position: absolute;
+    top: -10%;
+}
+
+
 
         .foto{
             padding: 4px;
@@ -128,8 +135,6 @@
         }
 
         .foto:hover{
-            transform: scale(1.1);
-            transition: transform .5s;
             cursor: pointer;
             padding: 4px;
         }
@@ -180,81 +185,264 @@
         .social-links a:hover {
             text-decoration: underline;
         }
+
+        .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    max-width: 65%;
+    margin: auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.content-image img {
+    width: 100%;
+    max-width: 120%; /* Limite de largura para a imagem */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    max-width: 400px;
+    text-align: center;
+}
+
+.content-text h1 {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B0000; /* Cor de fundo similar ao vermelho escuro */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.section-button:hover {
+    background-color: #600000; /* Cor mais escura ao passar o mouse */
+}
+
+        .image-link {
+        display: inline-block; /* Garante que o link siga o tamanho do conteúdo da imagem */
+        text-decoration: none; /* Remove sublinhados e decorações do link */
+    }
+    .image-link img {
+        width: 100%; /* Garante que a imagem mantenha seu tamanho */
+        height: auto;
+        object-fit: contain;
+    }
+    .bottom-button-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f4; /* Fundo para destacar a área do botão */
+    }
+
+    .bottom-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .bottom-button:hover {
+        background-color: #0056b3;
+    }
+
+    .foto-header{
+        position: absolute;
+        left:-20px;
+        top: 4px;    
+        margin-left: 2%;
+        max-height: 80%;
+    }
+
+    /* Media Query para telas menores (responsivo para celular) */
+@media (max-width: 920px) {
+
+    .hero {
+    background-image: url('https://amanha.com.br/images/u/171/Campus-da-PUCPR-em-Curitiba.jpg'); /* Substitua pela URL da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+}
+
+    .logo{
+        display: none;
+    }
+
+    .content-section {
+        flex-direction: column; /* Empilha a imagem e o conteúdo */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-image img {
+        max-width: 100%; /* Imagem ocupa toda a largura disponível */
+    }
+
+    .content-text {
+        max-width: 100%; /* Texto ocupa toda a largura disponível */
+        text-align: center;
+    }
+
+    .content-text h2 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    .content-text p {
+        font-size: 1rem; /* Reduz o tamanho do parágrafo */
+    }
+
+    .section-button {
+        padding: 12px 24px;
+        font-size: 1rem; /* Ajusta o tamanho do botão para ser mais confortável no celular */
+    }
+    nav ul {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .img-hero {
+        height: auto;
+        width: 100%;
+    }
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 12px;
+}
+
+}
+
+
+</style>
+
+
     </style>
 </head>
 
 <body>
     <!-- Header -->
     <header id="header">
-        <h1></h1>
+        <a href="#" class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1bJ3SthqGhfSHXzrutIZiCnzvkDPmCYivA&s" alt="Logo">
+        </a>
         <nav>
             <ul>
-                <li><a href="#">Células</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="https://www.youtube.com">Entre para a liga</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Sponsors</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Liga Financeira<br>PUCPR</h1> 
     </section>
 
     <!-- Content Section com Foto e Texto -->
+
+
     <div class="content-section">
-        <img src="https://picsum.photos/600/400?random=3" alt="Foto"class="foto">
-        <p>Aqui é o exemplo de como ficaria um texto aqui. A ideia é falar de algo como: Tal evento foi muito importante e pudemos fazer isto, isso e aquilo e assim por diante.</p>
+        <div class="content-image">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQF18GlbHgGhRg/feedshare-shrink_800/feedshare-shrink_800/0/1724519913365?e=1734566400&v=beta&t=dkBjO1iyyra-8Lp3sn3l6UDUztF6zyE5lNa2nhVnLOU" alt="Foto da organização" class="foto">
+        </div>
+        <div class="content-text">
+            <h1>Nosso time</h1>
+            <p>Venha conhecer a nossa equipe</p>
+            <a href="asset.html" class="section-button">Clique para saber</a>
+        </div>
     </div>
 
     <div class="content-section">
-        <p>Ou poderia deixar aqui quais são as células da liga e o que cada uma faz. E, quando clicar na foto da liga, você será redire
-            cionado para ser redirecionado para uma página da liga.</p>
-        <img src="https://picsum.photos/600/400?random=4" alt="Foto" class="foto">
+        <div class="content-text">
+            <h1>Nossos eventos</h1>
+            <p>Venha conhecer os nossos eventos</p>
+            <a href="asset.html" class="section-button">Clique para saber</a>
+        </div>
+        <div class="content-image">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
+        </div>
     </div>
 
     <div class="content-section">
-        <img src="https://picsum.photos/600/400?random=5" alt="Foto" class="foto">
-        <p>Mais e mais texto para ter maior visualização de como seria o site. Mais e mais texto para ter maior visualização de como seria o site. Mais e mais texto para ter maior visualização de como seria o site. Mais e mais texto para ter maior visualização de como seria o site.</p>
+        <div class="content-image">
+            <img src="https://picsum.photos/600/400?random=5" alt="Foto da organização" class="foto">
+        </div>
+        <div class="content-text">
+            <h1>Nossas células</h1>
+            <p>Venha conhecer as nossas células</p>
+            <a href="asset.html" class="section-button">Clique para saber</a>
+        </div>
     </div>
 
-    <div class="sponsors">
-        <div class="sponsor">
-            <img src="https://picsum.photos/600/400?random=10" alt="Patrocinador 1">
+    <div class="content-section">
+        <div class="content-text">
+            <h1>Gostou?</h1>
+            <p>Venha fazer parte da liga!</p>
+            <a href="asset.html" class="section-button">Clique para se inscrever    </a>
         </div>
-        <div class="sponsor">
-            <img src="https://picsum.photos/600/400?random=11" alt="Patrocinador 2">
+        <div class="content-image">
+            <img src="https://www.napratica.org.br/wp-content/uploads/2016/03/cursos-online-mercado-financeiro-wall-street.jpg" alt="Foto da organização" class="foto">
         </div>
-        <div class="sponsor">
-            <img src="https://picsum.photos/600/400?random=12" alt="Patrocinador 3">
-        </div>
-        <div class="sponsor">
-            <img src="https://picsum.photos/600/400?random=13" alt="Patrocinador 4">
-        </div>
-        <div class="sponsor">
-            <img src="https://picsum.photos/600/400?random=14" alt="Patrocinador 5">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 6">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 7">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 8">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 9">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 10">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 11">
-        </div>
-        <div class="sponsor">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Logo_of_University_of_California.svg/640px-Logo_of_University_of_California.svg.png" alt="Patrocinador 12">
+    </div>
+
+
+    <div class="sponsors-carousel">
+        <div class="sponsors">
+            <div class="sponsor">
+                <a href="https://exemplo.com/patrocinador1">
+                    <img src="https://conteudos.xpi.com.br/wp-content/uploads/2023/05/cropped-xp-logo.jpg" alt="Patrocinador 1">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://exemplo.com/patrocinador2">
+                    <img src="https://picsum.photos/600/400?random=11" alt="Patrocinador 2">
+                </a>
+            </div>
+            <!-- Adicione mais patrocinadores conforme necessário -->
         </div>
     </div>
     
@@ -281,6 +469,50 @@
                 header.classList.remove("small");
             }
         };
+
+        const carousel = document.querySelector('.sponsors');
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    // Eventos para começar o arrasto
+    carousel.addEventListener('mousedown', startDrag);
+    carousel.addEventListener('touchstart', startDrag);
+
+    // Eventos para terminar o arrasto
+    carousel.addEventListener('mouseup', endDrag);
+    carousel.addEventListener('mouseleave', endDrag);
+    carousel.addEventListener('touchend', endDrag);
+
+    // Eventos para realizar o arrasto
+    carousel.addEventListener('mousemove', dragMove);
+    carousel.addEventListener('touchmove', dragMove);
+
+    function startDrag(event) {
+        isDragging = true;
+        startPos = getPositionX(event);
+        carousel.style.cursor = 'grabbing'; // Cursor de arrasto ativo
+    }
+
+    function endDrag() {
+        isDragging = false;
+        prevTranslate = currentTranslate;
+        carousel.style.cursor = 'grab'; // Retorna ao cursor de arrasto normal
+    }
+
+    function dragMove(event) {
+        if (!isDragging) return;
+        const currentPosition = getPositionX(event);
+        const diff = currentPosition - startPos;
+        currentTranslate = prevTranslate + diff;
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
+    }
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+    
     </script>
 </body>
 
