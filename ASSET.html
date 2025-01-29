@@ -62,11 +62,7 @@
 }
 
 /* Navegação */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
+
 
 nav ul li a {
     color: #dbc4c4;
@@ -75,9 +71,28 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+.titulo-paragrafo{
+    font-size: 100px;
+    text-decoration:underline;
+    color: #cfbdbd;
+    background-color: rgb(27, 25, 25, 0.7)
+}   
+
 nav ul li a:hover {
     color: #690e08; /* Cor ao passar o mouse */
 }
+
+.topo{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.topo a{
+    text-decoration: none;
+    color: #d6c7c7;
+}
+
+
 
 /* Ícones de Redes Sociais */
 .social-icons {
@@ -281,6 +296,46 @@ nav ul li a:hover {
         max-height: 80%;
     }
 
+    main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        h2 {
+            color: #003366;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+        .highlight {
+            font-weight: bold;
+            text-decoration:underline;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background: #00509e;
+        }
+
     /* Media Query para telas menores (responsivo para celular) */
 @media (max-width: 920px) {
 
@@ -361,7 +416,7 @@ nav ul li a:hover {
 </style>
 
 
-    </style>
+
 </head>
 
 <body>
@@ -371,131 +426,63 @@ nav ul li a:hover {
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1bJ3SthqGhfSHXzrutIZiCnzvkDPmCYivA&s" alt="Logo">
         </a>
         <nav>
-            <ul>
-                <li><a href="sobre nós.html">Sobre nós</a></li>
-                <li><a href="celulas.html">Células</a></li>
-                <li><a href="processo de trainee.html">Processo de Trainee</a></li>
-                <li><a href="curso de formacao.html">Curso de formação</a></li>
-                <li><a href="membros.html">Membros</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Patrocinadores</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+            <h1 class="topo">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Sponsors</a></li>
+                <li><a href="#">Contact</a></li>
+            </h1>
         </nav>
     </header>
     <!-- Hero Section -->
     <section class="hero">
+        <p class="titulo-paragrafo">Asset Management <br>Gestão estratégica de ativos</p>
     </section>
-    
+
     <!-- Content Section com Foto e Texto -->
-    
-    
-    
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://media.licdn.com/dms/image/v2/D4D22AQF18GlbHgGhRg/feedshare-shrink_800/feedshare-shrink_800/0/1724519913365?e=1734566400&v=beta&t=dkBjO1iyyra-8Lp3sn3l6UDUztF6zyE5lNa2nhVnLOU" alt="Foto da organização" class="foto">
-        </div>
-        <div class="content-text">
-            <h1>Sobre nós</h1>
-            <p>Venha conhecer como a Liga funciona</p>
-            <a href="sobre nós.html" class="section-button">Clique para saber</a>
-        </div>
-    </div>
-    
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=5" alt="Foto da organização" class="foto">
-        </div>
-        <div class="content-text">
-            <h1>Nossas células</h1>
-            <p>Venha conhecer as nossas células</p>
-            <a href="celulas.html" class="section-button">Saiba mais</a>
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-text">
-            <h1>Processo de Trainee</h1>
-            <p>Venha conhecer o nosso processo</p>
-            <a href="processo de trainee.html" class="section-button">Saiba mais</a>
-        </div>
-        <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=5" alt="Foto da organização" class="foto">
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=5" alt="Foto da organização" class="foto">
-        </div>
-        <div class="content-text">
-            <h1>Curso de formação</h1>
-            <p>Venha conhecer o nosso curso de formação</p>
-            <a href="curso de formacao.html" class="section-button">Saiba mais</a>
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-text">
-            <h1>Membros</h1>
-            <p>Venha conhecer a nossa equipe</p>
-            <a href="membros.html" class="section-button">Clique para saber</a>
-        </div>
-        <div class="content-image">
-            <img src="https://media.licdn.com/dms/image/v2/D4D22AQF18GlbHgGhRg/feedshare-shrink_800/feedshare-shrink_800/0/1724519913365?e=1734566400&v=beta&t=dkBjO1iyyra-8Lp3sn3l6UDUztF6zyE5lNa2nhVnLOU" alt="Foto da organização" class="foto">
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=6" alt="Foto da organização" class="foto">
-        </div>
-        <div class="content-text">
-            <h1>Alumni</h1>
-            <p>---------</p>
-            <a href="asset.html" class="section-button">Clique para se inscrever    </a>
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-text">
-            <h1>Nossos eventos</h1>
-            <p>Venha conhecer os nossos eventos</p>
-            <a href="asset.html" class="section-button">Clique para saber</a>
-        </div>
-        <div class="content-image">
-            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
-        </div>
-    </div>
 
 
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://www.napratica.org.br/wp-content/uploads/2016/03/cursos-online-mercado-financeiro-wall-street.jpg" alt="Foto da organização" class="foto">
-        </div>
-        <div class="content-text">
-            <h1>Gostou?</h1>
-            <p>Venha fazer parte da liga!</p>
-            <a href="asset.html" class="section-button">Clique para se inscrever    </a>
-        </div>
-    </div>
 
+    <main>
+        <div class="image-banner"></div>
+        <h2>Sobre a Célula</h2>
+        <p>
+            A célula de <strong class="highlight">Asset Management</strong> desempenha um papel central na identificação de oportunidades de investimento e no treinamento de habilidades práticas em gestão de portfólio. Os membros trabalham com análises qualitativas e quantitativas de empresas, explorando diferentes setores ao longo do semestre. Além disso, a célula promove a compreensão do cenário macroeconômico e sua influência nas decisões financeiras.
+        </p>
 
-    <div class="sponsors-carousel">
-        <div class="sponsors">
-            <div class="sponsor">
-                <a href="https://exemplo.com/patrocinador1">
-                    <img src="https://conteudos.xpi.com.br/wp-content/uploads/2023/05/cropped-xp-logo.jpg" alt="Patrocinador 1">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://exemplo.com/patrocinador2">
-                    <img src="https://picsum.photos/600/400?random=11" alt="Patrocinador 2">
-                </a>
-            </div>
-            <!-- Adicione mais patrocinadores conforme necessário -->
-        </div>
-    </div>
+        <h2>Objetivos Principais</h2>
+        <ul>
+            <li>Identificar e analisar oportunidades de investimento com alto potencial de retorno.</li>
+            <li>Realizar avaliações setoriais detalhadas e conectar os resultados às tendências econômicas.</li>
+            <li>Capacitar os membros em técnicas avançadas de gestão de risco e alocação de portfólio.</li>
+            <li>Gerir na prática um fundo de ações simulado, aplicando conceitos teóricos ao mundo real.</li>
+        </ul>
+
+        <h2>Como Trabalhamos</h2>
+        <p>
+            Durante o semestre, a célula realiza um processo contínuo de aprendizado e prática. Cada membro contribui para a análise de diferentes empresas, avaliando suas perspectivas financeiras e setoriais. Dividimos nosso trabalho em etapas:
+        </p>
+        <ul>
+            <li><strong>Análise Qualitativa:</strong> Estudo aprofundado da governança corporativa, estratégias e posicionamento de mercado das empresas.</li>
+            <li><strong>Análise Quantitativa:</strong> Avaliação de dados financeiros, incluindo lucro, margem de crescimento e outros indicadores de performance.</li>
+            <li><strong>Análise Setorial:</strong> Identificação das tendências e desafios nos setores avaliados.</li>
+            <li><strong>Cenário Macroeconômico:</strong> Investigação de fatores externos como inflação, taxas de juros e políticas econômicas.</li>
+        </ul>
+
+        <h2>Resultados Esperados</h2>
+        <ul>
+            <li>Desenvolvimento de portfólios otimizados para diferentes perfis de risco.</li>
+            <li>Domínio de ferramentas e métodos de avaliação financeira.</li>
+            <li>Interpretação de tendências econômicas e sua aplicação em estratégias de investimento.</li>
+            <li>Criação de relatórios detalhados e apresentações claras e objetivas.</li>
+        </ul>
+
+        <h2>Nossa Equipe</h2>
+        <p>
+            A célula de Asset Management é composta por 4 a 5 analistas dedicados, que trabalham em cinco setores principais previamente definidos. O trabalho em equipe é essencial para garantir a qualidade das análises e a troca de conhecimento entre os integrantes.
+        </p>
+    </main>
     
 
     <!-- Rodapé -->
@@ -509,6 +496,8 @@ nav ul li a:hover {
             </ul>
         </div>
     </footer>
+
+
 
     <!-- Script para Reduzir o Header -->
     <script>

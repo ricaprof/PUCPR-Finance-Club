@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards de Membros</title>
+    <title>Organização</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+        }
+        .tabs {
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            background: #0077b5;
+            padding: 10px 0;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        .tab:hover, .tab.active {
+            background: #005582;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+        }
+        .content.active {
+            display: block;
         }
         .container {
             display: flex;
@@ -53,382 +71,93 @@
         .card p {
             font-size: 1rem;
             color: #555;
-            margin-bottom: 20px;
         }
-
-        .card a{
-            text-decoration: none;
-        }
-    
-
-    
         .button {
-            font-size: 18px;
-            color: white;
-            background-color: #0077b5;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .button i {
-            font-size: 24px;
-        }
-        .button:hover {
-            background-color: #005582;
-            transform: scale(1.05);
-        }
-        .button:focus {
-            outline: none;
-        }
+    font-size: 18px;
+    background-color: #0077b5;
+    color: white;
+    width: 100%; /* Deixa o botão quadrado */
+    height: 35px; /* Deixa o botão quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto; /* Centraliza dentro do card */
+    text-decoration: none;
+}
 
-        @media (max-width: 768px) {
-            .card {
-                width: 100%; /* Ocupa toda a largura em telas menores */
-                max-width: 500px;
-            }
-        }
+.button i {
+    font-size: 24px; /* Define o tamanho do ícone */
+}
+
+.button:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+}
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>João Silva</h2>
-                <p>Especialista em Equity Research, apaixonado por análise financeira e estratégias de investimento.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Maria Souza</h2>
-                <p>Especialista em M&A, com foco em fusões e aquisições de impacto no mercado financeiro.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Pedro Lima</h2>
-                <p>Especialista em Gestão de Riscos e Análise de Portfólio, focado em estratégias de longo prazo.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-            <div class="card-content">
-                <h2>Perfil de teste</h2>
-                <p>Apenas para simular a página.</p>
-                <div class="linkedin-section">
-                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
-                        <button class="button">
-                            <i class="fa fa-linkedin-square"></i> Conecte-se no LinkedIn
-                        </button>   
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        
-
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" onclick="openTab('diretores')">Diretores</div>
+        <div class="tab" onclick="openTab('membros')">Membros</div>
     </div>
+
+    <!-- Content -->
+    <div id="diretores" class="content active">
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://picsum.photos/250/250?random=5" alt="Foto do Diretor">
+                <div class="card-content">
+                    <h2>Ana Costa</h2>
+                    <p>Diretora Financeira, responsável pela estratégia de investimentos.</p>
+                    <!-- Botão LinkedIn -->
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin  botao_bonito"></i> 
+                    </a>
+                </div>
+                
+            </div>
+            
+            <!-- Add more director cards here -->
+        </div>
+    </div>
+
+    <div id="membros" class="content">  
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
+                <div class="card-content">
+                    <h2>João Silva</h2>
+                    <p>Especialista em Equity Research, apaixonado por análise financeira e estratégias de investimento.</p>
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin  botao_bonito"></i> 
+                    </a>
+                </div>
+            </div>
+            <!-- Add more member cards here -->
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            // Hide all content
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Show the selected content and mark the tab as active
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
