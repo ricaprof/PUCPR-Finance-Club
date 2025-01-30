@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="Untitled(1).png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos e Participações - PUCPR Finance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #003366, #0077b5);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 { 
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #003366;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul li strong {
+            color: #003366;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #003366;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #003366, #0077b5);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+        }
+
+        .back-button-not-fix{
+            background: linear-gradient(135deg, #003366, #0077b5);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+            width: 10%;
+        }
+
+        .back-button i {
+            font-size: 18px;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(135deg, #0077b5, #003366);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eventos e Participações</h1>
+        <p>Conheça os eventos que participamos e organizamos para promover o conhecimento e o networking.</p>
+    </header>
+
+    <div class="container">
+        <h2>Nossos Eventos</h2>
+        <ul>
+            <li><strong>André Marra & Marcelo Coppla:</strong> Palestra sobre estratégias de investimento e mercado financeiro.</li>
+            <li><strong>Eduardo Guedes:</strong> Palestra sobre gestão de ativos e oportunidades no mercado.</li>
+            <li><strong>Galapagos Capital:</strong> Palestra sobre fundos de investimento e análise de mercado.</li>
+            <li><strong>Prinz Capital:</strong> Palestra sobre private equity e venture capital.</li>
+            <li><strong>Rian Tavares:</strong> Palestra sobre carreira no mercado financeiro e tendências do setor.</li>
+            <li><strong>Visitas em SP Winter Summit:</strong> Participação no evento da XP Investimentos para networking e aprendizado.</li>
+            <li><strong>XP Investimentos:</strong> Palestra sobre produtos financeiros e educação financeira.</li>
+        </ul>
+
+        <h2>Participações</h2>
+        <p>
+            A PUCPR Finance já teve a oportunidade de participar e organizar uma ampla variedade de eventos, promovendo a capacitação da comunidade acadêmica da PUCPR e de Curitiba, além de fomentar o desenvolvimento e o aprofundamento no conhecimento das atividades da Liga.
+        </p>
+       <!--
+        <a href="index.html" class="back-button-not-fix">Voltar para a Página Inicial</a>
+        -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PUCPR Finance. <a href="index.html">Voltar para a página inicial</a></p>
+    </footer>
+
+    <!-- Botão de Voltar Fixo -->
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+</body>
+</html>

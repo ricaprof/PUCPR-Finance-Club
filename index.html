@@ -2,9 +2,11 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="icon" href="Untitled(1).png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site Profissional</title>
+    <link rel="icon" href="Untitled(1).png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         * {
@@ -92,7 +94,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('Campus-da-PUCPR-em-Curitiba-1.jpg'); /* Substitua pela URL da imagem de fundo */
+    background-image: url('/home/ricardo/Downloads/imagens-para-o-blog-1024x576.png'); /* Substitua pela URL da imagem de fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,6 +108,17 @@ nav ul li a:hover {
     overflow: hidden;
     margin-top: -8%;
 }
+
+.hero p {
+            font-size: 6rem; /* Tamanho grande para o texto */
+            font-weight: bold;
+            text-transform: uppercase; /* Texto em maiúsculas */
+            letter-spacing: 4px; /* Espaçamento entre letras */
+            margin: 0;
+            z-index: 2; /* Garante que o texto fique acima do overlay */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra para destacar o texto */
+            animation: fadeIn 2s ease-in-out; /* Animação de entrada */
+        }
 
 .hero-content {
     position: relative;
@@ -368,7 +381,7 @@ nav ul li a:hover {
     <!-- Header -->
     <header id="header">
         <a href="#" class="logo">
-            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEz9jFp2bdjDQ/company-logo_200_200/company-logo_200_200/0/1635254303855/clube_de_finanas_pucpr_logo?e=1746057600&v=beta&t=s6PxnUA12vvehWJ01ZMdQ0HccQ-F1DeCB2g-fSoEAww" alt="Logo">
+            <img style="transform: scale(1.3);" src="Untitled(1).png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -377,14 +390,16 @@ nav ul li a:hover {
                 <li><a href="processo de trainee.html">Processo de Trainee</a></li>
                 <li><a href="curso de formacao.html">Curso de formação</a></li>
                 <li><a href="membros.html">Membros</a></li>
-                <li><a href="#">Alumni</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
                 <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                <li><a href="nossos eventos.html" >Nossos eventos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
     <!-- Hero Section -->
     <section class="hero">
+        <p>PUCPR FINANCE</p>
     </section>
     
     <!-- Content Section com Foto e Texto -->

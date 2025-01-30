@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="icon" href="Untitled(1).png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site Profissional</title>
@@ -118,6 +119,17 @@ nav ul li a:hover {
     margin: 0;
 }
 
+.hero p {
+            font-size: 6rem; /* Tamanho grande para o texto */
+            font-weight: bold;
+            text-transform: uppercase; /* Texto em maiúsculas */
+            letter-spacing: 4px; /* Espaçamento entre letras */
+            margin: 0;
+            z-index: 2; /* Garante que o texto fique acima do overlay */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra para destacar o texto */
+            animation: fadeIn 2s ease-in-out; /* Animação de entrada */
+        }
+
 .hero-content p {
     font-size: 1.2rem;
     margin-top: 10px;
@@ -216,12 +228,14 @@ nav ul li a:hover {
     font-size: 2.4rem;
     color: #333;
     margin-bottom: 10px;
+    transform: scale(0.6);
 }
 
 .content-text p {
     font-size: 1.8rem;
     color: #666;
     margin-bottom: 20px;
+    transform: scale(0.6);
 }
 
 .section-button {
@@ -319,9 +333,6 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    .content-text h2 {
-        font-size: 1.8rem; /* Reduz o tamanho do título */
-    }
 
     .content-text p {
         font-size: 1rem; /* Reduz o tamanho do parágrafo */
@@ -368,7 +379,7 @@ nav ul li a:hover {
     <!-- Header -->
     <header id="header">
         <a href="#" class="logo">
-            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEz9jFp2bdjDQ/company-logo_200_200/company-logo_200_200/0/1635254303855/clube_de_finanas_pucpr_logo?e=1746057600&v=beta&t=s6PxnUA12vvehWJ01ZMdQ0HccQ-F1DeCB2g-fSoEAww" alt="Logo">
+            <img style="transform: scale(1.3);" src="Untitled(1).png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -379,13 +390,14 @@ nav ul li a:hover {
                 <li><a href="membros.html">Membros</a></li>
                 <li><a href="#">Alumni</a></li>
                 <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                <li><a href="nossos eventos.html" >Nossos eventos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
     <!-- Hero Section -->
     <section class="hero">
-        <p></p>
+        <p>PUCPR FINANCE</p>
     </section>
 
     <!-- Content Section com Foto e Texto -->
@@ -412,6 +424,28 @@ nav ul li a:hover {
         </div>
     </div>
 
+    <div class="content-section">
+        <div class="content-image">
+            <img src="https://www.napratica.org.br/wp-content/uploads/2016/03/cursos-online-mercado-financeiro-wall-street.jpg" alt="Foto da organização" class="foto">
+        </div>
+        <div class="content-text">
+            <h1>Crédito</h1>
+            <p>Avaliação e estruturação de soluções financeiras para gestão de crédito com eficiência.</p>
+            <a href="credito.html" class="section-button">Clique para se inscrever    </a>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="content-text">
+            <h1>Equity Research</h1>
+            <p>Estudo detalhado de empresas listadas, desempenho financeiro e valuation estratégico.</p>
+            <a href="equity-research.html" class="section-button">Clique para saber</a>
+        </div>
+        <div class="content-image">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
+        </div>
+    </div>
+    
     
     <div class="content-section">
         <div class="content-image">
@@ -421,28 +455,6 @@ nav ul li a:hover {
             <h1>M&A</h1>
             <p>Estratégias e suporte em fusões e aquisições, desde a avaliação até a integração.</p>
             <a href="m&a.html" class="section-button">Saiba mais</a>
-        </div>
-    </div>
-    
-    <div class="content-section">
-        <div class="content-text">
-            <h1>Crédito</h1>
-            <p>Avaliação e estruturação de soluções financeiras para gestão de crédito com eficiência.</p>
-            <a href="credito.html" class="section-button">Clique para se inscrever    </a>
-        </div>
-        <div class="content-image">
-            <img src="https://www.napratica.org.br/wp-content/uploads/2016/03/cursos-online-mercado-financeiro-wall-street.jpg" alt="Foto da organização" class="foto">
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
-        </div>
-        <div class="content-text">
-            <h1>Equity Research</h1>
-            <p>Estudo detalhado de empresas listadas, desempenho financeiro e valuation estratégico.</p>
-            <a href="equity-research.html" class="section-button">Clique para saber</a>
         </div>
     </div>
     

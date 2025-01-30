@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="Untitled(1).png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organização</title>
@@ -15,7 +16,7 @@
         .tabs {
             display: flex;
             justify-content: center;
-            background: #0077b5;
+            background: #262c31;
             padding: 10px 0;
         }
         .tab {
@@ -42,6 +43,13 @@
             justify-content: center;
             padding: 20px;
         }
+        .presidentes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 40px; /* Espaço entre presidentes e outros diretores */
+        }
         .card {
             background: white;
             width: 300px;
@@ -57,7 +65,6 @@
         }
         .card img {
             width: 100%;
-            height: 250px;
             object-fit: cover;
         }
         .card-content {
@@ -73,33 +80,44 @@
             color: #555;
         }
         .button {
-    font-size: 18px;
-    background-color: #0077b5;
-    color: white;
-    width: 100%; /* Deixa o botão quadrado */
-    height: 35px; /* Deixa o botão quadrado */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 0 auto; /* Centraliza dentro do card */
-    text-decoration: none;
-}
+            font-size: 18px;
+            background-color: #0077b5;
+            color: white;
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 0 auto;
+            text-decoration: none;
+        }
+        .button i {
+            font-size: 24px;
+        }
+        .button:hover {
+            background-color: #005582;
+            transform: scale(1.1);
+        }
 
-.button i {
-    font-size: 24px; /* Define o tamanho do ícone */
-}
-
-.button:hover {
-    background-color: #005582;
-    transform: scale(1.1);
-}
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
 
     </style>
 </head>
+
+<header>
+    <h1 style="color: white;">PUCPR Finance</h1>
+</header>
+
 <body>
+    
     <!-- Tabs -->
     <div class="tabs">
         <div class="tab active" onclick="openTab('diretores')">Diretores</div>
@@ -109,51 +127,131 @@
     <!-- Content -->
     <div id="diretores" class="content active">
         <div class="container">
-            <!-- Card 1 -->
+            <!-- Presidentes -->
+            <div class="presidentes">
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFnYSEmy44D5A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728750600870?e=1743638400&v=beta&t=EXbWk2H9m4FeR51lVRki_kRUFjsgCOCIWlj3Lsvghrg" alt="Foto do Diretor">
+                    <div class="card-content">
+                        <h2>Gustavo Forstman</h2>
+                        <p>Presidente</p>
+                        <a href="https://linkedin.com" target="_blank" class="button">
+                            <i class="fa fa-linkedin"></i> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHOSgVKIhF2uA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711805765007?e=1743638400&v=beta&t=L7XHrCZSU8q8wPrSZH8sh4LKrXEGh3yhJZMgxDo0380" alt="Foto do Diretor">
+                    <div class="card-content">
+                        <h2>Victor Alexandre</h2>
+                        <p>Vice Presidente</p>
+                        <a href="https://linkedin.com" target="_blank" class="button">
+                            <i class="fa fa-linkedin"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outros Diretores -->
             <div class="card">
-                <img src="https://via.placeholder.com/350x250" alt="Foto do Diretor">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGEVyNhnkm2JA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732887229887?e=1743638400&v=beta&t=PxkuuZpfZdbp1XZqtnun5J3kNaVu1s8MNyBIZmika1k" alt="Foto do Diretor">
                 <div class="card-content">
-                    <h2>Ana Costa</h2>
-                    <p>Diretora Financeira, responsável pela estratégia de investimentos.</p>
-                    <!-- Botão LinkedIn -->
+                    <h2>Sofia Cunha</h2>
+                    <p>Diretora Institucional</p>
                     <a href="https://linkedin.com" target="_blank" class="button">
-                        <i class="fa fa-linkedin  botao_bonito"></i> 
+                        <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>
             </div>
-            
-            <!-- Add more director cards here -->
-        </div>
-    </div>
 
-    <div id="membros" class="content">  
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQEPyOKJYZPjLQ/profile-displayphoto-shrink_100_100/B4DZSKUndtGUAU-/0/1737487449159?e=1743638400&v=beta&t=RuZUj_RMeH50KsPM-IHTDrZODoTz60MJoZZoH8CMkls" alt="Foto do Diretor">
+                <div class="card-content">
+                    <h2>João Vitor Carvalho</h2>
+                    <p>Diretor de Advisory</p>
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin"></i> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQEXpuk2V0O2NQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718215748937?e=1743638400&v=beta&t=FXJjB_JnqW6hgpGqpsTZ70sBsQmcUctBK-mhFwSewnA" alt="Foto do Diretor">
+                <div class="card-content">
+                    <h2>Gustavo Parreira</h2>
+                    <p>Diretor de Asset</p>
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin"></i> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHhVHtE_j3QZw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721251735494?e=1743638400&v=beta&t=E-in2ZL13csruj_BFKwsXDBPObcIryIDz_n5ZnFq5Us" alt="Foto do Diretor">
+                <div class="card-content">
+                    <h2>Arthur Oyama</h2>
+                    <p>Diretor de Crédito</p>
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin"></i> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGvWFjs0NOTAQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713121994948?e=1743638400&v=beta&t=KhqZm1L-QAV85RgX4Nf7KAoGKYslLXx58kzjbFglfmo" alt="Foto do Diretor">
+                <div class="card-content">
+                    <h2>Miguel Lins</h2>
+                    <p>Diretor de Equity Research</p>
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin"></i> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGFEp_eD072qg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721239188953?e=1743638400&v=beta&t=UB8HOedCR9KgzYwzT1e-QZL-UVI3TfUVBXbrYG8Ogug" alt="Foto do Diretor">
+                <div class="card-content">
+                    <h2>Guilherme de Toledo</h2>
+                    <p>Diretor de M&A</p>
+                    <a href="https://linkedin.com" target="_blank" class="button">
+                        <i class="fa fa-linkedin"></i> 
+                    </a>
+                </div>
+            </div>
+        </div> <!-- Fechamento da div .container -->
+    </div> <!-- Fechamento da div #diretores -->
+
+    <div id="membros" class="content">
         <div class="container">
             <!-- Card 1 -->
             <div class="card">
-                <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
-                <div class="card-content">
-                    <h2>João Silva</h2>
-                    <p>Especialista em Equity Research, apaixonado por análise financeira e estratégias de investimento.</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
-                        <i class="fa fa-linkedin  botao_bonito"></i> 
-                    </a>
-                </div>
+                <h1>Estamos trabalhando nisso</h1>
+                <!--
+                    <img src="https://via.placeholder.com/350x250" alt="Foto do Membro">
+                    <div class="card-content">
+                        <h2>João Silva</h2>
+                        <p>Especialista em Equity Research, apaixonado por análise financeira e estratégias de investimento.</p>
+                        <a href="https://linkedin.com" target="_blank" class="button">
+                            <i class="fa fa-linkedin"></i> 
+                        </a>
+                    </div>
+                    -->
             </div>
-            <!-- Add more member cards here -->
-        </div>
-    </div>
+            <!-- Adicione mais cards de membros aqui -->
+        </div> <!-- Fechamento da div .container -->
+    </div> <!-- Fechamento da div #membros -->
 
     <script>
         function openTab(tabId) {
-            // Hide all content
+            // Esconde todo o conteúdo
             const contents = document.querySelectorAll('.content');
             contents.forEach(content => content.classList.remove('active'));
 
-            // Remove active class from all tabs
+            // Remove a classe active de todas as abas
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach(tab => tab.classList.remove('active'));
 
-            // Show the selected content and mark the tab as active
+            // Mostra o conteúdo selecionado e marca a aba como ativa
             document.getElementById(tabId).classList.add('active');
             event.target.classList.add('active');
         }

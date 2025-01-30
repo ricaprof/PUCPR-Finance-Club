@@ -1,488 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Profissional</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <title>Patrocinadores - PUCPR Finance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-         /* Estilo da seção de patrocinadores */
-    .sponsors {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
-        background-color: #f4f4f4;
-    }
-
-    .sponsor {
-        margin: 10px;
-        text-align: center;
-    }
-
-    .sponsor img {
-        width: 150px; /* Tamanho das imagens */
-        height: 80px;
-        object-fit: contain; /* Garante que a imagem não fique distorcida */
-    }
-
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #f7f8fa;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
-            padding-top: 80px; /* Para não sobrepor o conteúdo ao header fixo */
-            width: 100%;
-        }
-/* Header */
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background-color: rgb(53, 52, 52, 0.6);
-}
-
-/* Logo */
-.logo img {
-    width: 50px; /* Tamanho do logo */
-    height: auto;
-    margin-left: -1vw;
-}
-
-/* Navegação */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #dbc4c4;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #690e08; /* Cor ao passar o mouse */
-}
-
-/* Ícones de Redes Sociais */
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a img {
-    width: 24px; /* Tamanho dos ícones */
-    height: auto;
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('Campus-da-PUCPR-em-Curitiba-1.jpg'); /* Substitua pela URL da imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    margin-top: -8%;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2; /* Coloca o texto acima da sobreposição escura */
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    color: #d6c7c7;
-    margin: 0;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: 300;
-}
-
-.img-hero{
-    position: absolute;
-    top: -10%;
-}
-
-
-
-        .foto{
-            padding: 4px;
-            background-color: black;
         }
 
-        .foto:hover{
-            cursor: pointer;
-            padding: 4px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            margin: 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        header {
+            background: linear-gradient(135deg, #003366, #0077b5);
+            color: white;
+            padding: 3rem 1rem;
             text-align: center;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .button:hover {
-            background-color: #0056b3;
+        header h1 { 
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #003366;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .sponsor-item {
+            display: flex;
+            align-items: center;
+            background: #f9f9f9;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .sponsor-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .sponsor-item img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 5px;
+        }
+
+        .sponsor-info {
+            flex: 1;
+        }
+
+        .sponsor-info h3 {
+            color: #003366;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .sponsor-info p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .sponsor-info a {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .sponsor-info a:hover {
+            background: #0077b5;
         }
 
         footer {
-            background-color: #003366;
-            color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 1.5rem;
+            background: #003366;
+            color: white;
+            margin-top: 40px;
         }
 
-        .footer-content {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .social-links {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding: 10px 0;
-        }
-
-        .social-links a {
-            color: #f4d35e;
+        footer a {
+            color: #ffcc00;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .social-links a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
 
-        .content-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
-    max-width: 65%;
-    margin: auto;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-}
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #003366, #0077b5);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1000;
+        }
 
-.content-image img {
-    width: 100%;
-    max-width: 120%; /* Limite de largura para a imagem */
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+        .back-button i {
+            font-size: 18px;
+        }
 
-.content-text {
-    max-width: 400px;
-    text-align: center;
-}
-
-.content-text h1 {
-    font-size: 2.4rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.content-text p {
-    font-size: 1.8rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.section-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #8B0000; /* Cor de fundo similar ao vermelho escuro */
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.section-button:hover {
-    background-color: #600000; /* Cor mais escura ao passar o mouse */
-}
-
-        .image-link {
-        display: inline-block; /* Garante que o link siga o tamanho do conteúdo da imagem */
-        text-decoration: none; /* Remove sublinhados e decorações do link */
-    }
-    .image-link img {
-        width: 100%; /* Garante que a imagem mantenha seu tamanho */
-        height: auto;
-        object-fit: contain;
-    }
-    .bottom-button-container {
-        text-align: center;
-        padding: 20px;
-        background-color: #f4f4f4; /* Fundo para destacar a área do botão */
-    }
-
-    .bottom-button {
-        display: inline-block;
-        padding: 15px 30px;
-        background-color: #007bff;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-
-    .bottom-button:hover {
-        background-color: #0056b3;
-    }
-
-    .foto-header{
-        position: absolute;
-        left:-20px;
-        top: 4px;    
-        margin-left: 2%;
-        max-height: 80%;
-    }
-
-    /* Media Query para telas menores (responsivo para celular) */
-@media (max-width: 920px) {
-
-    .hero {
-    background-image: url('https://amanha.com.br/images/u/171/Campus-da-PUCPR-em-Curitiba.jpg'); /* Substitua pela URL da imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-}
-
-    .logo{
-        display: none;
-    }
-
-    .content-section {
-        flex-direction: column; /* Empilha a imagem e o conteúdo */
-        padding: 20px;
-        text-align: center;
-    }
-
-    .content-image img {
-        max-width: 100%; /* Imagem ocupa toda a largura disponível */
-    }
-
-    .content-text {
-        max-width: 100%; /* Texto ocupa toda a largura disponível */
-        text-align: center;
-    }
-
-    .content-text h2 {
-        font-size: 1.8rem; /* Reduz o tamanho do título */
-    }
-
-    .content-text p {
-        font-size: 1rem; /* Reduz o tamanho do parágrafo */
-    }
-
-    .section-button {
-        padding: 12px 24px;
-        font-size: 1rem; /* Ajusta o tamanho do botão para ser mais confortável no celular */
-    }
-    nav ul {
-        gap: 10px;
-        font-size: 0.9rem;
-    }
-    
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-content p {
-        font-size: 1rem;
-    }
-    .img-hero {
-        height: auto;
-        width: 100%;
-    }
-    nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    font-size: 12px;
-}
-
-}
-
-
-</style>
-
-
+        .back-button:hover {
+            background: linear-gradient(135deg, #0077b5, #003366);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header id="header">
-        <a href="#" class="logo">
-            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEz9jFp2bdjDQ/company-logo_200_200/company-logo_200_200/0/1635254303855/clube_de_finanas_pucpr_logo?e=1746057600&v=beta&t=s6PxnUA12vvehWJ01ZMdQ0HccQ-F1DeCB2g-fSoEAww" alt="Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="sobre nós.html">Sobre nós</a></li>
-                <li><a href="celulas.html">Células</a></li>
-                <li><a href="processo de trainee.html">Processo de Trainee</a></li>
-                <li><a href="curso de formacao.html">Curso de formação</a></li>
-                <li><a href="membros.html">Membros</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Patrocinadores</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>Patrocinadores</h1>
+        <p>Conheça as empresas que apoiam a PUCPR Finance.</p>
     </header>
-    <!-- Hero Section -->
-    <section class="hero">
-    </section>
-    
-    <!-- Content Section com Foto e Texto -->
-    
-    
-    
-    <div class="content-section">
-        <div class="content-text">
-            <h1>Sobre nós</h1>
-            <p>Aqui eu vou colocar um patrocinador Exemplo(XP)</p>
-            <a href="https://www.xpi.com.br/" class="section-button">Clique para saber</a>
+
+    <div class="container">
+        <h2>Parceiros</h2>
+
+        <div class="sponsor-item">
+            <img src="https://via.placeholder.com/120" alt="Logo Parceiro 1">
+            <div class="sponsor-info">
+                <h3>Empresa X</h3>
+                <p>Empresa X é uma das líderes no setor financeiro, apoiando a educação e a inovação no mercado de capitais.</p>
+                <a href="#">Saiba mais</a>
+            </div>
         </div>
-        <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=1" alt="Foto da organização" class="foto">
+
+        <div class="sponsor-item">
+            <img src="https://via.placeholder.com/120" alt="Logo Parceiro 2">
+            <div class="sponsor-info">
+                <h3>Empresa Y</h3>
+                <p>Com mais de 20 anos de experiência, a Empresa Y investe em soluções sustentáveis para o futuro financeiro.</p>
+                <a href="#">Saiba mais</a>
+            </div>
         </div>
-    </div>
-    
-    <div class="content-section">
-        <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=5" alt="Foto da organização" class="foto">
+
+        <div class="sponsor-item">
+            <img src="Untitled(1).png" alt="Logo Parceiro 3">
+            <div class="sponsor-info">
+                <h3>Empresa Z</h3>
+                <p>A Empresa Z apoia iniciativas educacionais e projetos voltados ao crescimento de jovens talentos no mercado.</p>
+                <a href="#">Saiba mais</a>
+            </div>
         </div>
-        <div class="content-text">
-            <h1>Nossas células</h1>
-            <p>Venha conhecer as nossas células</p>
-            <a href="celulas.html" class="section-button">Saiba mais</a>
-        </div>
+
     </div>
 
- 
-    
-
-    <!-- Rodapé -->
     <footer>
-        <div class="footer-content">
-            <p>© 2024 Meu Site. Todos os direitos reservados.</p>
-            <ul class="social-links">
-                <li><a href="facebook.html">Facebook</a></li>
-                <li><a href="https://www.instagram.com/pucprfinance/">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/company/pucprfinance">LinkedIn</a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 PUCPR Finance. <a href="index.html">Voltar para a página inicial</a></p>
     </footer>
 
-    <!-- Script para Reduzir o Header -->
-    <script>
-        window.onscroll = function () {
-            var header = document.getElementById("header");
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                header.classList.add("small");
-            } else {
-                header.classList.remove("small");
-            }
-        };
-
-        const carousel = document.querySelector('.sponsors');
-    let isDragging = false;
-    let startPos = 0;
-    let currentTranslate = 0;
-    let prevTranslate = 0;
-
-    // Eventos para começar o arrasto
-    carousel.addEventListener('mousedown', startDrag);
-    carousel.addEventListener('touchstart', startDrag);
-
-    // Eventos para terminar o arrasto
-    carousel.addEventListener('mouseup', endDrag);
-    carousel.addEventListener('mouseleave', endDrag);
-    carousel.addEventListener('touchend', endDrag);
-
-    // Eventos para realizar o arrasto
-    carousel.addEventListener('mousemove', dragMove);
-    carousel.addEventListener('touchmove', dragMove);
-
-    function startDrag(event) {
-        isDragging = true;
-        startPos = getPositionX(event);
-        carousel.style.cursor = 'grabbing'; // Cursor de arrasto ativo
-    }
-
-    function endDrag() {
-        isDragging = false;
-        prevTranslate = currentTranslate;
-        carousel.style.cursor = 'grab'; // Retorna ao cursor de arrasto normal
-    }
-
-    function dragMove(event) {
-        if (!isDragging) return;
-        const currentPosition = getPositionX(event);
-        const diff = currentPosition - startPos;
-        currentTranslate = prevTranslate + diff;
-        carousel.style.transform = `translateX(${currentTranslate}px)`;
-    }
-
-    function getPositionX(event) {
-        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
-    }
-    
-    </script>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
 </body>
-
 </html>
