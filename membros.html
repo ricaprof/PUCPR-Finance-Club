@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organização</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/celulas.css">
+
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -52,11 +56,12 @@
         }
         .card {
             background: white;
-            width: 300px;
+            width: 250px;
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
+            padding: 15px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card:hover {
@@ -64,15 +69,14 @@
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
         }
         .card img {
-            width: 100%;
+            width: 80%;
+            border-radius: 50%;
             object-fit: cover;
-        }
-        .card-content {
-            padding: 20px;
+            margin-bottom: 10px;
         }
         .card h2 {
             margin: 10px 0;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #333;
         }
         .card p {
@@ -124,6 +128,10 @@
         <div class="tab" onclick="openTab('membros')">Membros</div>
     </div>
 
+    <a href="celulas.html" class="back-button">
+        <i class=""></i>&larr; Voltar
+    </a>
+
     <!-- Content -->
     <div id="diretores" class="content active">
         <div class="container">
@@ -134,7 +142,7 @@
                     <div class="card-content">
                         <h2>Gustavo Forstman</h2>
                         <p>Presidente</p>
-                        <a href="https://linkedin.com" target="_blank" class="button">
+                        <a href="https://www.linkedin.com/in/gustavoforstman/" target="_blank" class="button">
                             <i class="fa fa-linkedin"></i> 
                         </a>
                     </div>
@@ -145,7 +153,7 @@
                     <div class="card-content">
                         <h2>Victor Alexandre</h2>
                         <p>Vice Presidente</p>
-                        <a href="https://linkedin.com" target="_blank" class="button">
+                        <a href="https://www.linkedin.com/in/victor-alexandre-padilha-de-oliveira-5140411b8/" target="_blank" class="button">
                             <i class="fa fa-linkedin"></i> 
                         </a>
                     </div>
@@ -158,7 +166,7 @@
                 <div class="card-content">
                     <h2>Sofia Cunha</h2>
                     <p>Diretora Institucional</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
+                    <a href="https://www.linkedin.com/in/sofia-cunha-172629226/" target="_blank" class="button">
                         <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>
@@ -169,7 +177,7 @@
                 <div class="card-content">
                     <h2>João Vitor Carvalho</h2>
                     <p>Diretor de Advisory</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-de-carvalho-9b5936217/" target="_blank" class="button">
                         <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>
@@ -180,7 +188,7 @@
                 <div class="card-content">
                     <h2>Gustavo Parreira</h2>
                     <p>Diretor de Asset</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
+                    <a href="https://www.linkedin.com/in/gustavomparreira/" target="_blank" class="button">
                         <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>
@@ -191,7 +199,7 @@
                 <div class="card-content">
                     <h2>Arthur Oyama</h2>
                     <p>Diretor de Crédito</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
+                    <a href="https://www.linkedin.com/in/arthuroyama/" target="_blank" class="button">
                         <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>
@@ -202,7 +210,7 @@
                 <div class="card-content">
                     <h2>Miguel Lins</h2>
                     <p>Diretor de Equity Research</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
+                    <a href="https://www.linkedin.com/in/miguelchagas2022/" target="_blank" class="button">
                         <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>
@@ -213,7 +221,7 @@
                 <div class="card-content">
                     <h2>Guilherme de Toledo</h2>
                     <p>Diretor de M&A</p>
-                    <a href="https://linkedin.com" target="_blank" class="button">
+                    <a href="https://www.linkedin.com/in/guilherme-de-toledo/" target="_blank" class="button">
                         <i class="fa fa-linkedin"></i> 
                     </a>
                 </div>

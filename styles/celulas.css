@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 header {
-    background: linear-gradient(135deg, #002d62, #00509e);
+    background: linear-gradient(135deg, #3d1414, #3d1414);
     color: white;
     padding: 3rem 1rem;
     text-align: center;
@@ -32,10 +32,10 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 h2 {
-    color: #002d62;
+    color: #003366;
     font-size: 1.8rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #002d62;
+    border-bottom: 2px solid #003366;
     padding-bottom: 5px;
 }
 ul {
@@ -48,7 +48,7 @@ ul li {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background: #002d62;
+    background: #3d1414;
     color: white;
     margin-top: 40px;
 }
@@ -70,19 +70,59 @@ footer a:hover {
     margin-bottom: 20px;
 }
 .highlight {
-    color: #00509e;
     font-weight: bold;
+    text-decoration:underline;
 }
 .button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #002d62;
+    background: #003366;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
 }
 .button:hover {
-    background: #00509e;
+    background: #3d3131;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #3d1414;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+    background: #8d0f0f;
+    transform: translateY(-2px);
+}
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #3d1414, #ff0000);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.back-button i {
+    font-size: 18px;
+}
+.back-button:hover {
+    background: linear-gradient(135deg, #ff0000, #3d1414);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }

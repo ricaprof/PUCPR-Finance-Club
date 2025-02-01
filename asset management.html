@@ -16,7 +16,7 @@
             color: #333;
         }
         header {
-            background: linear-gradient(135deg, #003366, #00509e);
+            background: linear-gradient(135deg, #3d1414, #3d1414);
             color: white;
             padding: 3rem 1rem;
             text-align: center;
@@ -57,7 +57,7 @@
         footer {
             text-align: center;
             padding: 1.5rem;
-            background: #003366;
+            background: #3d1414;
             color: white;
             margin-top: 40px;
         }
@@ -95,6 +95,47 @@
         .button:hover {
             background: #00509e;
         }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3d1414;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background: #8d0f0f;
+            transform: translateY(-2px);
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #3d1414, #ff0000);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-button i {
+            font-size: 18px;
+        }
+        .back-button:hover {
+            background: linear-gradient(135deg, #ff0000, #3d1414);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
 </head>
 <body>
@@ -145,5 +186,11 @@
     <footer>
         <p>&copy; 2024 Liga Financeira. <a href="index.html">Voltar para a página inicial</a></p>
     </footer>
+
+        <!-- Botão de Voltar Futurista -->
+        <a href="celulas.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Voltar
+        </a>
+
 </body>
 </html>

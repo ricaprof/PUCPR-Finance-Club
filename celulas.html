@@ -8,6 +8,8 @@
     <title>Meu Site Profissional</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
+
+        
         * {
             margin: 0;
             padding: 0;
@@ -22,6 +24,46 @@
         padding: 20px;
         background-color: #f4f4f4;
     }
+
+    .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #3d1414;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+    background: #8d0f0f;
+    transform: translateY(-2px);
+}
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #3d1414, #ff0000);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.back-button i {
+    font-size: 18px;
+}
+.back-button:hover {
+    background: linear-gradient(135deg, #ff0000, #3d1414);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
 
     .sponsor {
         margin: 10px;
@@ -120,7 +162,7 @@ nav ul li a:hover {
 }
 
 .hero p {
-            font-size: 6rem; /* Tamanho grande para o texto */
+            font-size: 3rem; /* Tamanho grande para o texto */
             font-weight: bold;
             text-transform: uppercase; /* Texto em maiúsculas */
             letter-spacing: 4px; /* Espaçamento entre letras */
@@ -171,7 +213,7 @@ nav ul li a:hover {
         }
 
         footer {
-            background-color: #003366;
+            background-color: #3d1414;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -379,7 +421,7 @@ nav ul li a:hover {
     <!-- Header -->
     <header id="header">
         <a href="#" class="logo">
-            <img style="transform: scale(1.3);" src="Untitled(1).png" alt="Logo">
+            <img style="transform: scale(1.6);" src="Untitled(1).png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -396,8 +438,16 @@ nav ul li a:hover {
         </nav>
     </header>
     <!-- Hero Section -->
+
+        
+    
     <section class="hero">
-        <p>PUCPR FINANCE</p>
+        <p>PUCPR FINANCE  <br /></p><p>  </p>
+
+        <!--
+            <h2 style="margin-left: -20%; margin-top: 2%;">&nbsp;  <br> <br></h2>
+            -->
+        
     </section>
 
     <!-- Content Section com Foto e Texto -->
@@ -415,14 +465,19 @@ nav ul li a:hover {
 
     <div class="content-section">
         <div class="content-text">
-            <h1>ASSET</h1>
+            <h1>Asset Management</h1>
             <p>Análise de investimentos, gestão de risco e portfólio com foco em setores e cenários macroeconômicos.</p>
-            <a href="asset.html" class="section-button">Saiba mais</a>
+            <a href="asset management.html" class="section-button">Saiba mais</a>
         </div>
         <div class="content-image">
             <img src="https://media.licdn.com/dms/image/v2/D4D22AQF18GlbHgGhRg/feedshare-shrink_800/feedshare-shrink_800/0/1724519913365?e=1734566400&v=beta&t=dkBjO1iyyra-8Lp3sn3l6UDUztF6zyE5lNa2nhVnLOU" alt="Foto da organização" class="foto">
         </div>
     </div>
+
+
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
 
     <div class="content-section">
         <div class="content-image">
@@ -431,7 +486,7 @@ nav ul li a:hover {
         <div class="content-text">
             <h1>Crédito</h1>
             <p>Avaliação e estruturação de soluções financeiras para gestão de crédito com eficiência.</p>
-            <a href="credito.html" class="section-button">Clique para se inscrever    </a>
+            <a href="credito.html" class="section-button">Saiba mais</a>
         </div>
     </div>
 
@@ -439,7 +494,7 @@ nav ul li a:hover {
         <div class="content-text">
             <h1>Equity Research</h1>
             <p>Estudo detalhado de empresas listadas, desempenho financeiro e valuation estratégico.</p>
-            <a href="equity-research.html" class="section-button">Clique para saber</a>
+            <a href="equity-research.html" class="section-button">Saiba mais</a>
         </div>
         <div class="content-image">
             <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
@@ -458,24 +513,7 @@ nav ul li a:hover {
         </div>
     </div>
     
-    
 
-
-    <div class="sponsors-carousel">
-        <div class="sponsors">
-            <div class="sponsor">
-                <a href="https://exemplo.com/patrocinador1">
-                    <img src="https://conteudos.xpi.com.br/wp-content/uploads/2023/05/cropped-xp-logo.jpg" alt="Patrocinador 1">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://exemplo.com/patrocinador2">
-                    <img src="https://picsum.photos/600/400?random=11" alt="Patrocinador 2">
-                </a>
-            </div>
-            <!-- Adicione mais patrocinadores conforme necessário -->
-        </div>
-    </div>
     
 
     <!-- Rodapé -->
