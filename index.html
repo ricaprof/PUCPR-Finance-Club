@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site Profissional</title>
     <link rel="icon" href="Untitled(1).png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         * {
             margin: 0;
@@ -36,7 +35,7 @@
     }
 
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: #f7f8fa;
             color: #333;
             line-height: 1.6;
@@ -71,7 +70,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #dbc4c4;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -112,7 +111,6 @@ nav ul li a:hover {
 .hero p {
             font-size: 3rem; /* Tamanho grande para o texto */
             font-weight: bold;
-            text-transform: uppercase; /* Texto em maiúsculas */
             letter-spacing: 4px; /* Espaçamento entre letras */
             margin: 0;
             z-index: 2; /* Garante que o texto fique acima do overlay */
@@ -187,6 +185,7 @@ nav ul li a:hover {
             list-style: none;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 15px;
             padding: 10px 0;
         }
@@ -209,8 +208,8 @@ nav ul li a:hover {
     padding: 40px;
     max-width: 65%;
     margin: auto;
-    background-color: #f4f4f4;
     border-radius: 10px;
+    height: 20%;
 }
 
 .content-image img {
@@ -235,6 +234,7 @@ nav ul li a:hover {
     font-size: 1.8rem;
     color: #666;
     margin-bottom: 20px;
+    transform: scale(0.6);
 }
 
 .section-button {
@@ -380,8 +380,8 @@ nav ul li a:hover {
 <body>
     <!-- Header -->
     <header id="header">
-        <a href="#" class="logo">
-            <img style="transform: scale(1.7);" src="Untitled(1).png" alt="Logo">
+        <a href="index.html" class="logo">
+            <img style="transform: scale(1.7);" src="PUCPR Finance (1).png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -390,7 +390,9 @@ nav ul li a:hover {
                 <li><a href="processo de trainee.html">Processo de Trainee</a></li>
                 <li><a href="curso de formacao.html">Curso de formação</a></li>
                 <li><a href="membros.html">Membros</a></li>
-                <li><a href="alumni.html">Alumni</a></li>
+                <!--
+                    <li><a href="alumni.html">Alumni</a></li>
+                    -->
                 <li><a href="patrocinadores.html">Patrocinadores</a></li>
                 <li><a href="nossos eventos.html" >Nossos eventos</a></li>
                 <li><a href="#">Contato</a></li>
@@ -399,8 +401,9 @@ nav ul li a:hover {
     </header>
     <!-- Hero Section -->
     <section class="hero">
-        <p>PUCPR Finance</p>
-        <br><p><br></p>
+        <div>
+            <h1 style="font-size: 45px;">PUCPR Finance</h1><br><h2 style="font-size: 24px;">Saiba mais sobre a Liga Financeira da PUCPR</h2>
+        </div>
     </section>
     
     <!-- Content Section com Foto e Texto -->
@@ -410,10 +413,10 @@ nav ul li a:hover {
     <div class="content-section">
         <div class="content-text">
             <h1>Sobre nós</h1>
-            <p>Venha conhecer como a Liga funciona
+            <p>Conheça quem nós somos
                 (As fotos irão ser alteradas)
             </p>
-            <a href="sobre nós.html" class="section-button">Clique para saber</a>
+            <a href="sobre nós.html" class="section-button">Clique para saber   </a>
         </div>
         <div class="content-image">
             <img src="https://media.licdn.com/dms/image/v2/D4D22AQF18GlbHgGhRg/feedshare-shrink_800/feedshare-shrink_800/0/1724519913365?e=1734566400&v=beta&t=dkBjO1iyyra-8Lp3sn3l6UDUztF6zyE5lNa2nhVnLOU" alt="Foto da organização" class="foto">
@@ -426,7 +429,7 @@ nav ul li a:hover {
         </div>
         <div class="content-text">
             <h1>Nossas células</h1>
-            <p>Venha conhecer as nossas células</p>
+            <p>Conheça as nossas células</p>
             <a href="celulas.html" class="section-button">Saiba mais</a>
         </div>
     </div>
@@ -434,7 +437,7 @@ nav ul li a:hover {
     <div class="content-section">
         <div class="content-text">
             <h1>Processo de Trainee</h1>
-            <p>Venha conhecer o nosso processo</p>
+            <p>Conheça como funciona o Processo de Trainee</p>
             <a href="processo de trainee.html" class="section-button">Saiba mais</a>
         </div>
         <div class="content-image">
@@ -448,7 +451,7 @@ nav ul li a:hover {
         </div>
         <div class="content-text">
             <h1>Curso de formação</h1>
-            <p>Venha conhecer o nosso curso de formação</p>
+            <p>Conheça como funciona o nosso Curso de formação</p>
             <a href="curso de formacao.html" class="section-button">Saiba mais</a>
         </div>
     </div>
@@ -456,7 +459,7 @@ nav ul li a:hover {
     <div class="content-section">
         <div class="content-text">
             <h1>Membros</h1>
-            <p>Venha conhecer a nossa equipe</p>
+            <p>Conheça a nossa equipe</p>
             <a href="membros.html" class="section-button">Clique para saber</a>
         </div>
         <div class="content-image">
@@ -464,37 +467,40 @@ nav ul li a:hover {
         </div>
     </div>
 
+    <!--
+    Tirar Alumni
+        <div class="content-section">
+            <div class="content-image">
+                <img src="https://picsum.photos/600/400?random=6" alt="Foto da organização" class="foto">
+            </div>
+            <div class="content-text">
+                <h1>Alumni</h1>
+                <p>---------</p>
+                <a href="asset.html" class="section-button">Clique para se inscrever    </a>
+            </div>
+        </div>
+        
+        -->
     <div class="content-section">
         <div class="content-image">
-            <img src="https://picsum.photos/600/400?random=6" alt="Foto da organização" class="foto">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
         </div>
-        <div class="content-text">
-            <h1>Alumni</h1>
-            <p>---------</p>
-            <a href="asset.html" class="section-button">Clique para se inscrever    </a>
-        </div>
-    </div>
-
-    <div class="content-section">
         <div class="content-text">
             <h1>Nossos eventos</h1>
             <p>Venha conhecer os nossos eventos</p>
             <a href="asset.html" class="section-button">Clique para saber</a>
         </div>
-        <div class="content-image">
-            <img src="https://media.licdn.com/dms/image/v2/D4D22AQGK6_oHb_Z8Nw/feedshare-shrink_800/feedshare-shrink_800/0/1725406775446?e=1734566400&v=beta&t=UIBYbtpilQdlZz-rbDM8rJOgvei8rGAN02pjgt9ClaU" alt="Foto da organização" class="foto">
-        </div>
     </div>
 
 
     <div class="content-section">
-        <div class="content-image">
-            <img src="https://www.napratica.org.br/wp-content/uploads/2016/03/cursos-online-mercado-financeiro-wall-street.jpg" alt="Foto da organização" class="foto">
-        </div>
         <div class="content-text">
             <h1>Gostou?</h1>
             <p>Venha fazer parte da liga!</p>
             <a href="asset.html" class="section-button">Clique para se inscrever    </a>
+        </div>
+        <div class="content-image">
+            <img src="https://www.napratica.org.br/wp-content/uploads/2016/03/cursos-online-mercado-financeiro-wall-street.jpg" alt="Foto da organização" class="foto">
         </div>
     </div>
 
@@ -504,9 +510,9 @@ nav ul li a:hover {
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">
-            <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+            <p>© Feito com carinho pelo Membro <a style="color: #f4d35e;" href="https://www.linkedin.com/in/ricardo-vianna-65bb9731a/">Ricardo Vianna</a>.</p>
             <ul class="social-links">
-                <li><a href="facebook.html">Facebook</a></li>
+
                 <li><a href="https://www.instagram.com/pucprfinance/">Instagram</a></li>
                 <li><a href="https://www.linkedin.com/company/pucprfinance">LinkedIn</a></li>
             </ul>

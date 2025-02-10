@@ -50,23 +50,83 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
+        .bullet-list {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .bullet-list li {
+            background: #146500;
+            color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .bullet-list li::before {
+            content: "✔";
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #105806;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #002244;
+        }
+        .inscreva-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #e0b90b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .inscreva-button:hover {
+            background-color: #59520b;
+        }
     </style>
 </head>
 <body>
 
-    <a href="celulas.html" class="back-button">
-        <i class="fas fa-arrow-left"></i> Voltar
+    <a href="index.html" class="back-button">
+        &#11013; Voltar
     </a>
 
     <header>
         <h1 style="color: white;">PUCPR Finance</h1>
+        <a href="https://pay.kiwify.com.br/VF8NYgi" target="_blank" class="inscreva-button">Inscreva-se</a>
     </header>
     <main>
         <section>
             <h2>Curso de Formação</h2>
             <p>A <span class="highlight">PUCPR Finance</span> oferece um curso de formação voltado para alunos do 3º ano do ensino médio, com o objetivo de prepará-los para o mercado financeiro, o mundo dos negócios e qualquer outra área que desejem seguir.</p>
             <p>Ao longo de 12 semanas, os participantes desenvolverão uma visão analítica sobre as atividades das empresas, a economia como um todo e os principais fatores que impactam seu futuro profissional. Durante o programa, os alunos serão divididos em grupos de quatro pessoas e, ao final, apresentarão um estudo de caso sobre uma empresa de capital aberto.</p>
+        </section>
+
+        <section>
+            <h3>Destaques do Curso</h3>
+            <ul class="bullet-list">
+                <li>12 semanas intensas de aulas e desenvolvimento no projeto.</li>
+                <li>Aulas todos os sábados às 11h, gravadas para consulta posterior.</li>
+                <li>Apoio de um membro da PUCPR Finance ativamente durante todo o curso.</li>
+                <li>Criação de perfil no LinkedIn para networking profissional.</li>
+                <li>Dinâmica presencial com os finalistas na última semana.</li>
+            </ul>
         </section>
 
         <section>
